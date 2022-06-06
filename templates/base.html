@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {# <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> #}
+    <title>{{ title }} - RPS</title>
+</head>
+<header>
+    <h3 id="item1"> Lets play</h3>
+    <h1 id="item2">Rock Paper Scissors!</h1>
+</header>
+<body>
+   
+    <main id ="item3">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+<div>
+
+    <p>
+
+    </p>
+</div>
+<footer id ="item4">
+    <form class="form1" action="/Welcome" method="post">
+        <label for="Play_again">Another game?</label>
+        <input type="submit" value="OK">
+    </form>
+</footer>
+
+
+
+
+</html>

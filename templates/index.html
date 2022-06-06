@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+  <h2>Player 1, choose your weapon</h2>
+<form class="form1" action="/Welcome/next_player" method="post">{# links to app.route upcoming post#}
+
+  <label for="name">Player name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="weapon">Choose your weapon:</label>
+  <select name="weapon" id="weaponID">
+    <option value="rock">rock</option>
+    <option value="paper">paper</option>
+    <option value="scissors">scissors</option>
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
